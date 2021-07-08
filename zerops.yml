@@ -1,6 +1,6 @@
 use: [ php@8.0 ]
 run:
   - composer create-project symfony/website-skeleton test
-deploy: [ ./... ]
+deploy: [ ./test/* ]
 
 
