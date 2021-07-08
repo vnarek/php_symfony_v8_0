@@ -1,5 +1,6 @@
 use: [ php@8.0 ]
 run:
+  - php -v
   - composer install
 deploy: [ . ]
 
