@@ -14,8 +14,23 @@ class LuckyController
     {
         $number = random_int(0, 100);
 
+        // php8.0 feature
+        $php8feature = match (8.0) {
+            '8.0' => "not_matched",
+            8.0 => "matched",
+        };
+
         return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
+            '<html>
+                <body>
+                    <div>
+                    Lucky number: '.$number.'
+                    </div>
+                    <div>
+                    This text should be "matched": '.$php8feature.'
+                    </div>
+                </body>
+            </html>'
         );
     }
 }
