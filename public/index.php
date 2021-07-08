@@ -4,14 +4,6 @@ use App\Kernel;
 
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
 
-class Point {
-  public function __construct(
-    public float $x = 0.0,
-    public float $y = 0.0,
-    public float $z = 0.0,
-  ) {}
-}
-
 htmlspecialchars("haha", double_encode: false);
 
 echo match (8.0) {
